@@ -30,8 +30,8 @@ puts '5 skills created'
     title: "Portfolio title #{portfolio_item}",
     subtitle: "Ruby on Rails",
     body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, libero recusandae fugiat, animi ea ipsum quia doloribus aspernatur saepe veniam sequi nobis voluptas neque excepturi qui. Dicta ad ex inventore.",
-    main_image: "http://placekitten.com/g/500/700",
-    thumb_image: "http://placekitten.com/g/200/300"
+    main_image: "http://placekitten.com/g/300/400",
+    thumb_image: "http://placekitten.com/g/100/200"
   )
 end
 
@@ -42,8 +42,8 @@ puts '5 portfolio item created'
     title: "Portfolio title #{portfolio_item}",
     subtitle: "Angular",
     body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, libero recusandae fugiat, animi ea ipsum quia doloribus aspernatur saepe veniam sequi nobis voluptas neque excepturi qui. Dicta ad ex inventore.",
-    main_image: "http://placekitten.com/g/500/700",
-    thumb_image: "http://placekitten.com/g/200/300"
+    main_image: "http://placekitten.com/g/300/400",
+    thumb_image: "http://placekitten.com/g/100/200"
   )
 end
 
