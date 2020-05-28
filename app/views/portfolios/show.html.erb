@@ -6,5 +6,15 @@
 
 <h2>Technologies used:</h2>
 <% @portfolio_item.technologies.each do |t| %>
-  <p><%= t.name %></p>
+	<p><%= t.name %></p>
 <% end %>
+
+<hr>
+<%= #params.inspect %>
+<br>
+<%= #params[:action] %>
+<br>
+<%= #Portfolio.find(params[:id]).title %>
+
+<br>
+<%= #session.inspect %>
