@@ -5,6 +5,6 @@
   <p><%= portfolio_item.subtitle %></p>
   <span><%= portfolio_item.body %></span>
   <%= image_tag portfolio_item.main_image if !portfolio_item.main_image.nil? %>
-  <p><%= link_to 'Edit this Portfolio item', edit_portfolio_path(portfolio_item) %></p>
-  <p><%= link_to 'Destroy Portfolio item', portfolio_path(portfolio_item), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+  <p><%= link_to 'Edit this Portfolio item', edit_portfolio_path(portfolio_item) if logged_in?(:site_admin) %></p>
+  <p><%= link_to 'Destroy Portfolio item', portfolio_path(portfolio_item), method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %></p>
 </div>
