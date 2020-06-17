@@ -1,8 +1,8 @@
 $(document).on 'turbolinks:load', ->
-  comments = $('comments')
+  comments = $('#comments')
   if comments.length > 0
-    App.global_chat = App.cable.subscription.create {
-      channel: 'BlogChannel'
+    App.global_chat = App.cable.subscriptions.create {
+      channel: "BlogsChannel"
       blog_id: comments.data('blog-id')
     },
     connected: ->
@@ -15,8 +15,8 @@ $(document).on 'turbolinks:load', ->
     $this = $(this)
     textarea = $this.find('#comment_content')
     if $.trim(textarea.val()).length > 1
-      App.global_chat.send_comment textarea.val()
-      comments.data('blog_id')
+      App.global_chat.send_comment textarea.val(),
+      comments.data('blog-id')
       textarea.val('')
     e.preventDefault()
     return false

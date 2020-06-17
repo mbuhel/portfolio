@@ -1,20 +1,16 @@
-<h2><%= @blog.title %></h2>
-<p>
+<div class="col-sm-8 blog-main">
+
+  <h2><%= @blog.title %></h2>
+
   <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %>
-</p>
 
-<p>
-  <strong>Body:</strong>
-  <%= @blog.body %>
+  <p>
+    <%= @blog.body %>
+  </p>
 
-  <!-- Start comment form -->
   <%= render 'comments/comment_form' %>
-  <!-- End comment form -->
 
-  <!-- Start comments -->
   <div id="comments" data-blog-id="<%= @blog.id %>">
-  <%= render @blog.comments %>
+    <%= render @blog.comments %>
   </div>
-  <!-- End comments -->
-</p>
-
+</div>

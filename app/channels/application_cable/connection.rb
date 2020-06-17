@@ -1,6 +1,6 @@
 module ApplicationCable
   class Connection < ActionCable::Connection::Base
-    identify_by :current_user
+    identified_by :current_user
 
     def guest_user
       guest = GuestUser.new
@@ -20,7 +20,7 @@ module ApplicationCable
 
     protected
 
-    def verified_user
+    def find_verified_user
       if verified_user = env['warden'].user
         verified_user
       end

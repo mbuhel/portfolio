@@ -4,7 +4,6 @@ class BlogsChannel < ApplicationCable::Channel
   end
 
   def unsubscribed
-    
   end
 
   def send_comment(data)
