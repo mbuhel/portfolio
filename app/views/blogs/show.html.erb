@@ -6,5 +6,13 @@
 <p>
   <strong>Body:</strong>
   <%= @blog.body %>
+
+  <!-- Start comment form -->
+  <%= render 'comments/comment_form' %>
+  <!-- End comment form -->
+
+  <!-- Start comments -->
+  <%= render @blog.comments %>
+  <!-- End comments -->
 </p>
 
