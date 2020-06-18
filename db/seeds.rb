@@ -1,7 +1,7 @@
 User.create!(
   email: "test@test.com",
-  password: "asdfasdf",
-  password_confirmation: "asdfasdf",
+  password: "111111",
+  password_confirmation: "111111",
   name: "Admin User",
   roles: "site_admin"
 )
@@ -36,9 +36,9 @@ end
 
 puts "10 blog posts created"
 
-5.times do |skill|
+5.times do |skills|
   Skill.create!(
-    title: "Rails #{skill}",
+    title: "Rails #{skills}",
     percent_utilized: 15
   )
 end
