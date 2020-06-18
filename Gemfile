@@ -72,3 +72,5 @@ gem 'gritter', '~> 1.2'
 gem 'redis', '~> 4.2', '>= 4.2.1'
 gem 'redcarpet', '~> 3.5'
 gem 'coderay', '~> 1.1', '>= 1.1.3'
+
+ruby "2.4.1"
