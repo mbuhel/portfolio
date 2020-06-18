@@ -8,10 +8,10 @@ module ApplicationHelper
     end
   end
 
-  def source_helper(layout_name)
+  def source_helper style
     if session[:source]
-      greeting = "Thanks for visiting my webpage from #{session[:source]} and you are on the #{layout_name} layout"
-      content_tag(:p, greeting, class: "source-greeting")
+      greeting = "Thanks for visiting my webpage from #{session[:source]}, please fell free to #{ link_to 'contact me', contact_path } if you'd like to work together."
+      content_tag(:div, greeting.html_safe, class: style)
     end
   end
   def nav_items
