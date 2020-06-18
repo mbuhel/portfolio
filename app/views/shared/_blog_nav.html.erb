@@ -1,14 +1,16 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <%= link_to 'Max Buhel', root_path, class: 'navbar-brand' %>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <nav class="main-nav navbar-nav">
-        <%= nav_helper 'nav-link', 'span' %>
-        <%= login_helper 'nav-link'%>
-      </nav>
+    <div class="contaner">
+      <%= link_to 'Max Buhel', root_path, class: 'navbar-brand' %>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <nav class="main-nav navbar-nav">
+          <%= nav_helper 'nav-link', 'span' %>
+          <%= login_helper 'nav-link'%>
+        </nav>
+      </div>
     </div>
   </nav>
 </header>
